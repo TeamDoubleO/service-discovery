@@ -1,0 +1,10 @@
+spring:
+  config:
+    import: optional:configserver:http://config-server:8888/
+  cloud:
+    config:
+      name: service-discovery
+  application:
+    name: service-discovery
+  profiles:
+    active: local
